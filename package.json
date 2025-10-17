@@ -1,0 +1,28 @@
+{
+  "name": "@involvex/gemini-changelog",
+  "version": "0.0.1",
+  "description": "Gemini Changelog Writer",
+  "keywords": [
+    "gemini",
+    "changelog"
+  ],
+  "bin": "dist/gemini-changelog.js",
+  "license": "MIT",
+  "author": "involvex",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-node-resolve": "^16.0.3"
+  },
+  "devdependencies": {
+    "@rollup/plugin-commonjs": "^28.0.8",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.52.4"
+  }
+}
