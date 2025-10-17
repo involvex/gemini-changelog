@@ -47,7 +47,7 @@ exec('git log --pretty=format:"%h - %s (%an)"', (error, stdout, stderr) => {
 
     // 2. Use Gemini to generate changelog
     const genAI = new GoogleGenerativeAI(geminiApiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
     const prompt = `
     Based on the following git log, create a changelog in Markdown format.
